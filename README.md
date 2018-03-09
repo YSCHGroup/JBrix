@@ -1,4 +1,5 @@
 ![Logotype](https://i.imgur.com/QoAU4DH.png)
+<img src="https://i.imgur.com/QoAU4DH.png" width="350"/>
 # JBrix
 
 Welcome to the documentation for JBrix. This is an simple, free and open source JavaScript Library!
