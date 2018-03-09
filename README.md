@@ -18,12 +18,16 @@ Here is a list over all functions and other addons as well as how to use them!
 
 ### • JB-Init()
 *(Initialize JBrix)*
+
 This runns all the functions that is used to set up the JBrix library.
+
 (Is runned at page load)
 
 ### • JB-UpdateClasses()
 *(HTML Classes)*
+
 Apply all properties to all classes set inside the html code.
+
 (Is runned by [JB-Init()](#-jb-init))
 
 
