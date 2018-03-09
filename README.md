@@ -1,4 +1,4 @@
-<h1><img src="https://i.imgur.com/bHX7GQK.png" width="25px"/>  JBrix
+<h1><img src="https://i.imgur.com/bHX7GQK.png" width="25px" title="Logotype"/>  JBrix
 </h1>
 Welcome to the documentation for JBrix. This is an simple, free and open source JavaScript Library!
 Here is a list over all functions and other addons as well as how to use them!
@@ -6,7 +6,7 @@ Here is a list over all functions and other addons as well as how to use them!
 ### Table of Content:
 1. JS **Functions**
      - [JB-Init()](#-jb-init)
-     - [JB-AddLibrary()](#-jb-addlibrary)
+     - [JB-AddLibrary()](#-jb-addlibraryfile)
 2. HTML **Classes**
      - [JB-OSF](#-jb-osf)
      - [JB-OIM](#-jb-oim)
