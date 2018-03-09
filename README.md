@@ -8,7 +8,7 @@ Here is a list over all functions and other addons as well as how to use them!
 
 ### Table of Content:
 1. **Installation**
-     - How to import to HTML
+     - [How to import to HTML](#-how-to-import-to-html)
 2. JS **Functions**
      - [JB-Init()](#-jb-init)
      - [JB-AddLibrary()](#-jb-addlibraryfile)
