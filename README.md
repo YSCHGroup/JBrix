@@ -5,9 +5,9 @@ Here is a list over all functions and other addons as well as how to use them!
 
 ### Table of Content:
 1. **Functions**
-     - JB-Init()
+     - [JB-Init()](#-jb-init)
 2. **Classes**
-     - JB-OSF
+     - [JB-OSF](#-jb-osf)
 
 
 
