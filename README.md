@@ -1,9 +1,9 @@
-<h1>JBrix
- <img src="https://i.imgur.com/QoAU4DH.png" width="50px"/></h1>
+<h1><img src="https://i.imgur.com/bHX7GQK.png" width="80px"/>  JBrix
+</h1>
 Welcome to the documentation for JBrix. This is an simple, free and open source JavaScript Library!
 Here is a list over all functions and other addons as well as how to use them!
 
-#### Table of Content:
+### Table of Content:
 1. Functions
      - JB-Init()
 2. Classes
@@ -14,7 +14,7 @@ Here is a list over all functions and other addons as well as how to use them!
 
 ## Classes
 
-#### JB-OSF
+### • JB-OSF
 *(Open src file)*
 
 > This HTML class can only be added to files that contains the src=“” attribute.
