@@ -1,5 +1,47 @@
-#p_demo {
+
+* {
+	font-family: sans-serif;
+}
+
+.p_demo {
+	font-size: 150%;
+}
+
+.about_text {
 	color: white;
 	background-color: #222;
 	padding: 10px;
+}
+
+h1 {
+	font-size: 250%;
+	border-bottom-width: 2px;
+	border-bottom-color: #000;
+	border-bottom-style: solid;
+}
+
+h2 {
+	color: #E24A69;
+	text-shadow: 0 1px 1px #1B2D2E;
+	margin-left: 15px;
+	font-size: 200%;
+	text-decoration: underline;
+}
+
+h3 {
+	color: #EC748C;
+	text-shadow: 0 1px 1px #1B2D2E;
+	margin-left: 40px;
+	font-size: 150%;
+	text-decoration: underline;
+}
+
+h3:before {
+	content: "- ";
+}
+
+highlighted {
+	color: #ED8C71;
+	text-shadow: 0 2px 10px #1B2D2E;
+	font-size: 110%;
 }

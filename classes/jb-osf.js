@@ -4,6 +4,7 @@ for (var i = 0; i < imgs.length; i++) {
 	var src_url = imgs[i].getAttribute("src");
 	var wrap = document.createElement("a");
 	wrap.href = src_url;
+	wrap.setAttribute('target', '_blank');
 
 	child_img = document.createElement("img");
 	child_img.src = src_url;

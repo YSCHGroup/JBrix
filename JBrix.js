@@ -22,6 +22,7 @@ function Init() {
 	    }
 	}
 
+	// Add all components
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: START'));
 
 	AddLibrary(root_directory + "/classes/jb-oim");
