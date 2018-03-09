@@ -6,7 +6,7 @@ Here is a list over all functions and other addons as well as how to use them!
 ### Table of Content:
 1. JS **Functions**
      - [JB-Init()](#-jb-init)
-     - [JB-UpdateClasses()](#-jb-updateclasses)
+     - [JB-AddLibrary()](#-jb-addlibrary)
 2. HTML **Classes**
      - [JB-OSF](#-jb-osf)
      - [JB-OIM](#-jb-oim)
@@ -21,15 +21,16 @@ Here is a list over all functions and other addons as well as how to use them!
 *(Initialize JBrix)*
 
 This runns all the functions that is used to set up the JBrix library.
+*(Import JBrix components to the html code.)*
 
 (Is runned at page load)
 
-### • JB-UpdateClasses()
-*(HTML Classes)*
+### • JB-AddLibrary(file)
+*(Import modules)*
 
-Apply all properties to all classes set inside the html code.
+This is used to import new scripts to the html code! (puts the script in the head tag)
 
-(Is runned by [JB-Init()](#-jb-init))
+(Is runned by [JB-Init()](#-jb-init) when importing JBrix's components)
 
 
 
