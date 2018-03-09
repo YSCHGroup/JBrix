@@ -1,6 +1,6 @@
-<img src="https://i.imgur.com/QoAU4DH.png" width="150" style="float: left"/>
-# JBrix
-
+<img src="https://i.imgur.com/QoAU4DH.png" width="50" style="float: left"/>
+<h1>JBrix
+</h1>
 Welcome to the documentation for JBrix. This is an simple, free and open source JavaScript Library!
 Here is a list over all functions and other addons as well as how to use them!
 
