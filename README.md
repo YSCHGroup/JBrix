@@ -22,21 +22,21 @@ Here is a list over all functions and other addons as well as how to use them!
 
 ### • How to import to HTML
 
-Place the following `<script>` tag inside your `<header>` tag if your *.html file is in the same folder as 'JBrix.js'.
+Place the following `<script>` tag inside your `<header>` tag if your '*.html' file is in the same folder as 'JBrix.js'.
 ```
 <script src="JBrix.js"></script>
 ```
 This will just assume that your html file is in the same directory as the JBrix.js file.
 
-If the *.html file is **NOT** in the same folder as 'JBrix.js', do as following...
+If the '*.html' file is **NOT** in the same folder as 'JBrix.js', do as following...
 ```
-<script src=" [PATH] JBrix.js" path=" [PATH] "></script>
+<script src=" [PATH] /JBrix.js" path=" [PATH] "></script>
 ```
-If you put `PATH` equals to `..`. JBrix will work if the html file is in the directory above for example.
+If you put `PATH` equals to `..`, JBrix will work if the html file is in the directory above for example.
 
 #### IMPORTANT!
-You are allowed to only enter the directory path inside that `path="[PATH]"` attribute. It will only see it as a custom root directory for JBrix.
-This should also be the same place as JBrix.js is located!
+You are allowed to simply enter the directory path inside the `path="[PATH]"` attribute. It will only see it as a custom root directory for JBrix.
+This should also be the same place as 'JBrix.js' is located!
 
 
 ## Functions
