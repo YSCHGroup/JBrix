@@ -3,16 +3,40 @@
 Welcome to the documentation for JBrix. This is an simple, free and open source JavaScript Library!
 Here is a list over all functions and other addons as well as how to use them!
 
+-------------------------------
+
+
 ### Table of Content:
-1. JS **Functions**
+1. **Installation**
+     - How to import to HTML
+2. JS **Functions**
      - [JB-Init()](#-jb-init)
      - [JB-AddLibrary()](#-jb-addlibraryfile)
-2. HTML **Classes**
+3. HTML **Classes**
      - [JB-OSF](#-jb-osf)
      - [JB-OIM](#-jb-oim)
+-------------------------------
 
 
+## Installation
 
+### • How to import to HTML
+
+Place the following `<script>` tag inside your `<header>` tag if your *.html file is in the same folder as 'JBrix.js'.
+```
+<script src="JBrix.js"></script>
+```
+This will just assume that your html file is in the same directory as the JBrix.js file.
+
+If the *.html file is **NOT** in the same folder as 'JBrix.js', do as following...
+```
+<script src=" [PATH] JBrix.js" path=" [PATH] "></script>
+```
+If you put `PATH` equals to `..`. JBrix will work if the html file is in the directory above for example.
+
+#### IMPORTANT!
+You are allowed to only enter the directory path inside that `path="[PATH]"` attribute. It will only see it as a custom root directory for JBrix.
+This should also be the same place as JBrix.js is located!
 
 
 ## Functions

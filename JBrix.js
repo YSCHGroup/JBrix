@@ -24,8 +24,8 @@ function Init() {
 
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: START'));
 
-	AddLibrary(root_directory + "classes/jb-oim");
-	AddLibrary(root_directory + "classes/jb-osf");
+	AddLibrary(root_directory + "/classes/jb-oim");
+	AddLibrary(root_directory + "/classes/jb-osf");
 
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: END'));
 }
