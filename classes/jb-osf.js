@@ -8,6 +8,7 @@ for (var i = 0; i < imgs.length; i++) {
 
 	child_img = document.createElement("img");
 	child_img.src = src_url;
+	child_img.style = imgs[i].getAttribute("style");
 	child_img.style.width = String(imgs[i].getAttribute("width"));
 	child_img.style.height = imgs[i].getAttribute("height");
 	child_img.style.marginTop = imgs[i].getAttribute("vspace");
@@ -18,6 +19,8 @@ for (var i = 0; i < imgs.length; i++) {
 	child_img.title = imgs[i].getAttribute("title");
 	child_img.id = imgs[i].getAttribute("id");
 	child_img.class = imgs[i].getAttribute("class");
+	child_img.disabled = imgs[i].getAttribute("disabled");
+	child_img.href = imgs[i].getAttribute("href");
 
 
 
