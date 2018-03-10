@@ -51,7 +51,7 @@ Depending on what script component you want to import to your project, there are
 ```
 <script src="[your website]\JBrix\classes\jb-oim.js"></script>
 ```
-This will only import one of JBrix's components and it will work **perfecly** as expected!
+This will only import one of JBrix's components and it will work **perfectly** as expected!
 
 
 
