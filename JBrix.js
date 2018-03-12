@@ -13,7 +13,7 @@ function Init() {
 	    if (script_tags[i].src.includes('JBrix.js')) {
 	    	var path_val = script_tags[i].getAttribute("path")
 	    	if (path_val) {
-	    		console.log(i,"Found Custom Root Path For JBrix: '" + path_val + "'")
+	    		console.log("[%cJBrix%c] %cFound Custom Root Path For JBrix: %c'" + path_val + "'", "color:coral; font-size: 140%", "color:black", "color:green", "color:blue");
 	    		root_directory = path_val;
 	    	}
 	    	else {

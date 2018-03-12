@@ -1,5 +1,5 @@
 var imgs = document.getElementsByClassName('jb-osf');
-
+var class_counter = 0
 for (var i = 0; i < imgs.length; i++) {
 	var src_url = imgs[i].getAttribute("src");
 	var wrap = document.createElement("a");
@@ -7,23 +7,17 @@ for (var i = 0; i < imgs.length; i++) {
 	wrap.setAttribute('target', '_blank');
 
 	child_img = document.createElement("img");
-	child_img.src = src_url;
-	child_img.style = imgs[i].getAttribute("style");
-	child_img.style.width = String(imgs[i].getAttribute("width"));
-	child_img.style.height = imgs[i].getAttribute("height");
-	child_img.style.marginTop = imgs[i].getAttribute("vspace");
-	child_img.style.marginLeft = imgs[i].getAttribute("hspace");
-	child_img.longDesc = imgs[i].getAttribute("longdesc");
-	child_img.alt = imgs[i].getAttribute("alt");
-	child_img.align = imgs[i].getAttribute("align");
-	child_img.title = imgs[i].getAttribute("title");
-	child_img.id = imgs[i].getAttribute("id");
-	child_img.class = imgs[i].getAttribute("class");
-	child_img.disabled = imgs[i].getAttribute("disabled");
-	child_img.href = imgs[i].getAttribute("href");
+
+	Array.from(imgs[i].attributes).forEach(attr => {
+		// Transfer all attributes to the new img
+		child_img.setAttribute(attr.name, attr.value)
+	})
+	console.log(child_img);
 
 
-
-	imgs[i].parentNode.replaceChild(wrap, imgs[0]); 
+	imgs[i].parentNode.replaceChild(wrap, imgs[i]); 
 	wrap.appendChild(child_img);
+
+	class_counter++;
 }
+console.log("[%cJBrix%c] %d 'jb-osf' Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green");
