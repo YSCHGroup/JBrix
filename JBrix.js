@@ -1,5 +1,5 @@
 
-
+// Load JBrix when page has loaded
 window.onLoad = Init();
 
 // Variabls
@@ -25,8 +25,13 @@ function Init() {
 	// Add all components
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: START'));
 
+	// Classes
 	AddLibrary(root_directory + "/classes/jb-oim");
 	AddLibrary(root_directory + "/classes/jb-osf");
+	// Functions
+	AddLibrary(root_directory + "/functions/jb-decodeHTML");
+	AddLibrary(root_directory + "/functions/jb-getUrlVariables");
+	AddLibrary(root_directory + "/functions/jb-replaceVariablesInElement");
 
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: END'));
 }

@@ -20,4 +20,4 @@ for (var i = 0; i < imgs.length; i++) {
 
 	class_counter++;
 }
-console.log("[%cJBrix%c] %d 'jb-osf' Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green");
+console.log("[%cJBrix%c] (%d) 'jb-osf' Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green");

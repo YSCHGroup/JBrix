@@ -16,6 +16,9 @@ Here is a list over all functions and other addons as well as how to use them!
 3. HTML **Classes**
      - [JB-OSF](#-jb-osf)
      - [JB-OIM](#-jb-oim)
+4. HTML **Variables**
+     - Using Variables!
+     - Check Available Variables
 -------------------------------
 
 
@@ -92,3 +95,25 @@ What this does is making the element clickable, and opens the direct link to its
 
 This class can **only** be added to **img** tags.
 Which makes the image clickable, and opens up a modal window above the page.
+
+
+
+
+
+## Variables
+
+### • Using Variables!
+
+It's extremely easy to use variables in JBrix. All you have to do is adding the variable "name" inside of "%%" and woalla! The variable will be replaced with it's representing value.<br>
+For example; You want your page to tell you the browsers width... Well, it's easy! add the %innerWidth% to the paragraph<br>
+<p>This is your width: %innerWidth%!</p>
+Becomes:
+
+This is your width: 1920!
+
+Using variables in JBrix is almost like PHP, the values are server sided. So the user can't see the %innerWidth% when inspecting the elements!
+
+### • Check Available Variables
+*(Object.entries(window))*
+
+Use the command `Object.entries(window)` to list all available variables to use in your HTML code.
