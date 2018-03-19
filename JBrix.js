@@ -30,6 +30,7 @@ function Init() {
 	AddLibrary(root_directory + "/classes/jb-osf");
 	// Functions
 	AddLibrary(root_directory + "/functions/jb-decodeHTML");
+	AddLibrary(root_directory + "/functions/jb-clearURL");
 	AddLibrary(root_directory + "/functions/jb-getUrlVariables");
 	AddLibrary(root_directory + "/functions/jb-replaceVariablesInElement");
 
