@@ -5,14 +5,14 @@ function getUrlVariables() {
 			var name = args[i].split("=")[0];
 			var value = args[i].split("=")[1];
 
-			value = convert_from_html_to_string(value);
+			value = decodeHTML(value); // Using jb-decodeHTML.js
 
 			window[name] = value;
 			console.log("[getUrlVariables] " + name + "=" + value);
 		}
 	}
 	catch(error) {
-		console.log("[getUrlVariables]%c No variables in url found...", "color: red;");
+		console.log("[getUrlVariables]%c No variables in url found... \n(" + error + ")", "color: red;");
 	}
 }
 getUrlVariables();
