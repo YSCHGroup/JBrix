@@ -16,6 +16,8 @@ function decodeHTML(rawhtml) {
 	rawstring = String(rawstring).replace(new RegExp('%29', "g"), ')');
 	rawstring = String(rawstring).replace(new RegExp('%2A', "g"), '*');
 	rawstring = String(rawstring).replace(new RegExp('%2C', "g"), ',');
+	rawstring = String(rawstring).replace(new RegExp('%91', "g"), '‘');
+	rawstring = String(rawstring).replace(new RegExp('%92', "g"), '’');
 	rawstring = String(rawstring).replace(new RegExp('%2F', "g"), '/');
 	rawstring = String(rawstring).replace(new RegExp('%3A', "g"), ':');
 	rawstring = String(rawstring).replace(new RegExp('%3B', "g"), ';');

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>JBrix Demo</title>
+        <title>JBrix Demo %innerHeight%</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="demo.css">
 
@@ -43,13 +43,13 @@
 		            <br>
 		            With:
 		            <br>
-		            <img src="demo.jpg" alt="Image" width="200px" title="click me!" class="jb-osf">
+		            <img src="demo.jpg" alt="Image" width="200px" title="click me!" class="jb-oim">
 		            <br>
 		        </p>
 			</li>
 		</ul>
 
-		<h2 id="functions">Variables</h2>
+		<h2 id="variables">Variables</h2>
 		
 		<ul>
 			<li>
@@ -71,6 +71,12 @@
 						Using variables in JBrix is almost like PHP, the values are server sided. So the user can't see the % innerWidth % when inspecting the elements!
 		            </p>
 		        </p>
+		        <input type="text" id="variable_input" placeholder="%variable%">
+		        <button onclick="
+		        	document.getElementById('variable_result').innerText = 'Result: ' + document.getElementById('variable_input').value;
+		        	replaceVariablesInElement(document.body);
+		        ">Apply</button>
+		        <p id="variable_result">Result: </p>
 			</li>
 		</ul>
 
