@@ -30,9 +30,11 @@ function Init() {
 	AddLibrary(root_directory + "/classes/jb-osf");
 	// Functions
 	AddLibrary(root_directory + "/functions/jb-decodeHTML");
+	AddLibrary(root_directory + "/functions/jb-encodeHTML");
 	AddLibrary(root_directory + "/functions/jb-clearURL");
 	AddLibrary(root_directory + "/functions/jb-getUrlVariables");
 	AddLibrary(root_directory + "/functions/jb-replaceVariablesInElement");
+	AddLibrary(root_directory + "/functions/jb-arrayManagement");
 
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: END'));
 }

@@ -12,7 +12,6 @@ for (var i = 0; i < imgs.length; i++) {
 		// Transfer all attributes to the new img
 		child_img.setAttribute(attr.name, attr.value)
 	})
-	console.log(child_img);
 
 
 	imgs[i].parentNode.replaceChild(wrap, imgs[i]); 
@@ -20,4 +19,4 @@ for (var i = 0; i < imgs.length; i++) {
 
 	class_counter++;
 }
-console.log("[%cJBrix%c] (%d) 'jb-osf' Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green");
+console.log("[%cJBrix%c] jb-osf: %d Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green");
