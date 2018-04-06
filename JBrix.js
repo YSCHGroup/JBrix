@@ -1,5 +1,17 @@
+/*
+
+*/
+
+// Initialize Varialbes
 var jbFullLibrary = true;
 var jbDebugMode = false;
+
+// Create new elements
+var jbModuleList = document.createElement("ul");
+jbModuleList.id="JBrixComponents";
+document.getElementsByTagName("head")[0].appendChild(jbModuleList);
+
+
 // Load JBrix when page has loaded
 window.onLoad = Init();
 
@@ -28,10 +40,7 @@ function Init() {
 	}
 
 	// Add all components
-	var moduleList = document.createElement("ul");
-	moduleList.id="JBrixComponents";
-	document.getElementsByTagName("head")[0].appendChild(moduleList);
-	moduleList.appendChild(document.createComment(' JBrix Imported Modules: START'));
+	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: START'));
 
 	// Classes
 	AddLibrary(root_directory + "/classes/jb-oim");
@@ -42,7 +51,7 @@ function Init() {
 	AddLibrary(root_directory + "/functions/jb-replaceVariablesInElement");
 	AddLibrary(root_directory + "/functions/jb-arrayManagement");
 
-	moduleList.appendChild(document.createComment(' JBrix Imported Modules: END'));
+	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: END'));
 
 	console.log("[%cJBrix%c] %cSuccessfully loaded all components of JBrix!", "color:coral; font-size: 140%", "color:black", "color:green");
 }
@@ -51,5 +60,5 @@ function AddLibrary(file) {
 	var NewScript=document.createElement('script');
 	NewScript.src=file+".js";
    	NewScript.type='text/javascript';
-   	moduleList.appendChild(NewScript);
+   	jbModuleList.appendChild(NewScript);
 }
