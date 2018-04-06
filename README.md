@@ -12,6 +12,7 @@ Here is a list over all functions and other addons as well as how to use them!
      - [Import individual parts from CDN (webserver)](#-import-individual-parts-from-cdn)
      - [Import full library](#-import-full-library)
      - [Import individual parts](#-import-individual-parts)
+     - [Import Debugging](#-import-debugging)
 2. JS **Functions**
      - [JB-Init()](#-jb-init)
      - [JB-AddComponent()](#-jb-addcomponentfile)
@@ -82,9 +83,12 @@ Depending on what script component you want to import to your project, there are
 ```
 This will only import one of JBrix's components and it will work **perfectly** as expected!
 
-
-
-
+### • Import Debugging
+```
+<script src="[path to JBrix]" debug="true"></script>
+```
+This will enable debugging while importing the library onto your website.
+Otherwise it will only display one confirmation message about JBrix i installed.
 
 ## Functions
 

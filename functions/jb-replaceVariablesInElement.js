@@ -34,7 +34,7 @@ function replaceVariablesInElement(element) {
 			console.log(error)
 		}
 	}
-	console.log("[%cJBrix%c] replaceVariablesInElement: Replaced %c(" + matches + ")%c variables in " + element, "color:coral; font-size: 140%", "color:black", "color: green; font-size: 110%", "color: black;");
+	if (jbDebugMode) { console.log("[%cJBrix%c] replaceVariablesInElement: Replaced %c(" + matches + ")%c variables in " + String(element.tagName), "color:coral; font-size: 140%", "color:black", "color: green; font-size: 110%", "color: black;"); }
 }
 replaceVariablesInElement(document.head); // Automatically replace all variables on the page
 replaceVariablesInElement(document.body);

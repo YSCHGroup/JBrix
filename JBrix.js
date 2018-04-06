@@ -1,5 +1,5 @@
 var jbFullLibrary = true;
-
+var jbDebugMode = false;
 // Load JBrix when page has loaded
 window.onLoad = Init();
 
@@ -13,8 +13,10 @@ function Init() {
 	for (var i=0;i<script_tags.length;i++) {
 	    if (script_tags[i].src.includes('JBrix.js')) {
 	    	var path_val = script_tags[i].getAttribute("path")
+	    	var jbDebugMode = (String(script_tags[i].getAttribute("debug")) == "true");
+
 	    	if (path_val) {
-	    		console.log("[%cJBrix%c] Found Custom Root Path For JBrix: %c'" + path_val + "'", "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;");
+	    		if (jbDebugMode) { console.log("[%cJBrix%c] Found Custom Root Path For JBrix: %c'" + path_val + "'", "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;");}
 	    		root_directory = path_val;
 	    	}
 	    	else {
