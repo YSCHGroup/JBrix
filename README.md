@@ -8,6 +8,8 @@ Here is a list over all functions and other addons as well as how to use them!
 
 ### Table of Content:
 1. **Installation**
+     - [Import full library from CDN (webserver)](#-import-full-library-from-cdn)
+     - [Import individual parts from CDN (webserver)](#-import-individual-parts-from-cdn)
      - [Import full library](#-import-full-library)
      - [Import individual parts](#-import-individual-parts)
 2. JS **Functions**
@@ -23,6 +25,30 @@ Here is a list over all functions and other addons as well as how to use them!
 
 
 ## Installation
+
+### • Import full library from CDN
+
+Add:
+```
+<script src="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/JBrix.js" path="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/"></script>
+```
+To import **JBrix** to your website!
+
+### • Import individual parts from CDN
+
+Add this tag for example: 
+```
+<script src="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/functions/jb-clearURL.js"></script>
+```
+To import the function clearURL(); to your website!
+
+Or:
+
+Add this:
+```
+<script src="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/classes/jb-osf.js"></script>
+```
+To import and enable the use of the class="jb-osf"!
 
 ### • Import full library
 *(All components)*
