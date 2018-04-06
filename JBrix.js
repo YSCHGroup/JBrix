@@ -14,6 +14,7 @@ function Init() {
 	    if (script_tags[i].src.includes('JBrix.js')) {
 	    	var path_val = script_tags[i].getAttribute("path")
 	    	var jbDebugMode = (String(script_tags[i].getAttribute("debug")) == "true");
+	    	if (jbDebugMode) { console.log("[%cJBrix%c] Debug Mode: %cOn", "color:coral; font-size: 140%", "color:black", "color: green; font-weight: bold;") }
 
 	    	if (path_val) {
 	    		if (jbDebugMode) { console.log("[%cJBrix%c] Found Custom Root Path For JBrix: %c'" + path_val + "'", "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;");}
