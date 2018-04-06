@@ -31,7 +31,7 @@ Here is a list over all functions and other addons as well as how to use them!
 
 Add:
 ```
-<script src="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/JBrix.js" path="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/"></script>
+<script src="https://rawgit.com/YSCHGroup/JBrix/master/JBrix.js" path="https://rawgit.com/YSCHGroup/JBrix/master/"></script>
 ```
 To import **JBrix** to your website!
 
@@ -39,7 +39,7 @@ To import **JBrix** to your website!
 
 Add this tag for example: 
 ```
-<script src="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/functions/jb-clearURL.js"></script>
+<script src="https://rawgit.com/YSCHGroup/JBrix/master/functions/jb-clearURL.js"></script>
 ```
 To import the function clearURL(); to your website!
 
@@ -47,7 +47,7 @@ Or:
 
 Add this:
 ```
-<script src="https://cdn.rawgit.com/YSCHGroup/JBrix/bb1128df/classes/jb-osf.js"></script>
+<script src="https://rawgit.com/YSCHGroup/JBrix/master/classes/jb-osf.js"></script>
 ```
 To import and enable the use of the class="jb-osf"!
 
