@@ -58,4 +58,4 @@ function decodeHTML(rawhtml) {
 
 	return string;
 }
-console.log("[%cJBrix%c] decodeHTML(): Function Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", "color:green");
+if (typeof jbFullLibrary === "undefined") { console.log("[%cJBrix%c] decodeHTML(): Function Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", "color:green"); }

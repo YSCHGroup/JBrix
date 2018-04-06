@@ -1,3 +1,4 @@
+var jbFullLibrary = true;
 
 // Load JBrix when page has loaded
 window.onLoad = Init();
@@ -13,7 +14,7 @@ function Init() {
 	    if (script_tags[i].src.includes('JBrix.js')) {
 	    	var path_val = script_tags[i].getAttribute("path")
 	    	if (path_val) {
-	    		console.log("[%cJBrix%c] %cFound Custom Root Path For JBrix: %c'" + path_val + "'", "color:coral; font-size: 140%", "color:black", "color:green", "color:blue");
+	    		console.log("[%cJBrix%c] Found Custom Root Path For JBrix: %c'" + path_val + "'", "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;");
 	    		root_directory = path_val;
 	    	}
 	    	else {
@@ -37,6 +38,8 @@ function Init() {
 	AddLibrary(root_directory + "/functions/jb-arrayManagement");
 
 	document.getElementsByTagName("head")[0].appendChild(document.createComment(' JBrix Imported Modules: END'));
+
+	console.log("[%cJBrix%c] %cSuccessfully loaded all components of JBrix!", "color:coral; font-size: 140%", "color:black", "color:green");
 }
 
 function AddLibrary(file) {

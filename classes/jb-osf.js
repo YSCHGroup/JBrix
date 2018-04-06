@@ -19,4 +19,4 @@ for (var i = 0; i < imgs.length; i++) {
 
 	class_counter++;
 }
-console.log("[%cJBrix%c] jb-osf: %d Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green");
+if (typeof jbFullLibrary === "undefined") { console.log("[%cJBrix%c] jb-osf: %d Class(es) Loaded %cSuccessfully!", "color:coral; font-size: 140%", "color:black", class_counter, "color:green"); }
