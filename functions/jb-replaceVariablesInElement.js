@@ -8,11 +8,6 @@ function replaceVariablesInElement(element) {
 				continue;
 			}
 
-			if (typeof value == "string" && value.includes("=")) {
-				console.log("%cFound forbidden character ('=') in argument '" + key + "'! You can't assign a variable a value within a variable!", "color: red");
-				continue;
-			}
-
 			if (element.innerHTML.indexOf("%" + key + "%") > -1) {		// Check if the exacy global variable key name exists
 				// The key exists in the context
 				element.innerHTML = element.innerHTML.replace(new RegExp("%" + key + "%", "g"), value);

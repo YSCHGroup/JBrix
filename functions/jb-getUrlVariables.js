@@ -7,6 +7,11 @@ function getUrlVariables() {
 
 			value = decodeURI(value);
 
+			if (value.includes("=")) {
+				console.log("[%cJBrix%c] getURLVariables: %cFound forbidden character ('=') in argument '" + name + "'! You can't assign a variable a value within a variable!", "color:coral; font-size: 140%", "color:black", "color: red");
+				continue;
+			}
+
 			window[name] = value;
 			if (jbDebugMode) { console.log("[%cJBrix%c] getUrlVariables: %c" + name + "%c=%c" + value, "color:coral; font-size: 140%", "color: black", "font-weight: bold; color: blue; font-size: 105%", "color: black; padding: 0 1.5px", "font-weight: bold; color: blue; font-size: 110%"); }
 		}
