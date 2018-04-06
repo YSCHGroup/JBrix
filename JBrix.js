@@ -26,7 +26,6 @@ function Init() {
 	    if (script_tags[i].src.includes('JBrix.js')) {
 	    	var path_val = script_tags[i].getAttribute("path")
 	    	jbDebugMode = (String(script_tags[i].getAttribute("debug")) == "true");
-	    	console.log("Loading...");
 	    	if (jbDebugMode) { console.log("[%cJBrix%c] Debug Mode: %cOn", "color:coral; font-size: 140%", "color:black", "color: green; font-weight: bold;") }
 
 	    	if (path_val) {
