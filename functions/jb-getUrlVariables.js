@@ -5,7 +5,7 @@ function getUrlVariables() {
 			var name = args[i].split("=")[0];
 			var value = args[i].split("=")[1];
 
-			value = decodeHTML(value); // Using jb-decodeHTML.js
+			value = decodeURI(value); // Using jb-decodeHTML.js
 
 			window[name] = value;
 			console.log("[%cJBrix%c] getUrlVariables: %c" + name + "%c=%c" + value, "color:coral; font-size: 140%", "color: black", "font-weight: bold; color: blue; font-size: 105%", "color: black; padding: 0 1.5px", "font-weight: bold; color: blue; font-size: 110%");
