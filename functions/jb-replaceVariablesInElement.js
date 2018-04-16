@@ -25,8 +25,10 @@ function replaceVariablesInElement(element) {
 			}
 		}
 		catch(error) {
+			if (jbDebugMode === true) {
 			console.log(key + ": " + value)
 			console.log(error)
+			}
 		}
 	}
 	if (jbDebugMode) { console.log("[%cJBrix%c] replaceVariablesInElement: Replaced %c(" + matches + ")%c variables in " + String(element.tagName), "color:coral; font-size: 140%", "color:black", "color: green; font-size: 110%", "color: black;"); }

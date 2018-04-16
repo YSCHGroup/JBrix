@@ -44,6 +44,7 @@ function Init() {
 	// Classes
 	AddLibrary(root_directory + "/classes/jb-oim");
 	AddLibrary(root_directory + "/classes/jb-osf");
+	AddLibrary(root_directory + "/classes/jb-moveableIn()");
 	// Functions
 	AddLibrary(root_directory + "/functions/jb-clearURL");
 	AddLibrary(root_directory + "/functions/jb-getUrlVariables");

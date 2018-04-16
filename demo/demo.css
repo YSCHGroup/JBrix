@@ -69,3 +69,24 @@ highlighted {
 	text-shadow: 0 2px 10px #1B2D2E;
 	font-size: 110%;
 }
+
+#moveableContainer {
+	width: 50%;
+	height: 15vw;
+	background-color: #878787;
+}
+.moveableBox {
+	padding: 10px;
+	background-color: #999;
+	border: solid #777 2px;
+	width: 90px;
+	text-align: center;
+	font-size: 150%;
+	color: #fff;
+	text-shadow: 0 0 20px #f95, 0 0 15px #f95;
+	cursor: pointer;
+}
+.moveableBox:focus, .moveableBox:hover {
+	top: -10px;
+	box-shadow: 0 10px 10px #444;
+}
