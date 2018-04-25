@@ -26,8 +26,8 @@ function replaceVariablesInElement(element) {
 		}
 		catch(error) {
 			if (jbDebugMode === true) {
-			console.log(key + ": " + value)
-			console.log(error)
+				console.log(key + ": " + value)
+				console.log(error)
 			}
 		}
 	}

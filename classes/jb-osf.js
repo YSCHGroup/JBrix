@@ -1,3 +1,5 @@
+if (typeof jbDebugMode == undefined) { var jbDebugMode = false } /* If no Debug mode is entered */
+
 var imgs = document.getElementsByClassName('jb-osf');
 var class_counter = 0
 for (var i = 0; i < imgs.length; i++) {

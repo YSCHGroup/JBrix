@@ -1,3 +1,5 @@
+if (typeof jbDebugMode == undefined) { var jbDebugMode = false } /* If no Debug mode is entered */
+
 function getUrlVariables() {
 	try {
 		var args = String(window.location.href).split('?')[1].split('&');

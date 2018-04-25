@@ -1,3 +1,5 @@
+if (typeof jbDebugMode == undefined) { var jbDebugMode = false } /* If no Debug mode is entered */
+
 var moveableElements = document.querySelectorAll('[class^="jb-moveableIn("]');
 var class_counter = 0;
 /*

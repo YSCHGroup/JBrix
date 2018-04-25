@@ -1,3 +1,5 @@
+if (typeof jbDebugMode == undefined) { var jbDebugMode = false } /* If no Debug mode is entered */
+
 function arrayFindKeyIndex(arr, key) {
 	return arr.findIndex(function(element) { return element[0] === key })
 }
