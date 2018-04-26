@@ -142,9 +142,9 @@ Which makes the image clickable, and opens up a modal window above the page.
 It's extremely easy to use variables in JBrix. All you have to do is adding the variable "name" inside of "%%" and woalla! The variable will be replaced with it's representing value.<br>
 For example; You want your page to tell you the browsers width... Well, it's easy! add the %innerWidth% to the paragraph
 
-<p>This is your width: %innerWidth%!</p>
+<p>This is your width: %innerWidth%!<br>
 <em>Becomes:</em>
-<p>This is your width: 1920!</p>
+<br>This is your width: 1920!</p>
 
 Using variables in JBrix is almost like PHP, the values are server sided. So the user can't see the %innerWidth% when inspecting the elements!
 
