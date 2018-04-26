@@ -70,9 +70,10 @@ If the '*.html' file is **NOT** in the same folder as 'JBrix.js', do as followin
 If you put `PATH` equals to `..`, JBrix will work if the html file is in the directory above for example.
 
 #### IMPORTANT!
-You are allowed to simply enter the directory path inside the `path="[PATH]"` attribute. It will only see it as a custom root directory for JBrix.
+You are allowed to simply enter the directory **path** inside the `path="[PATH]"` attribute. It will only see it as a custom root directory for JBrix.
 This should also be the same place as 'JBrix.js' is located!
-There's also an attribute called debug, this enables or disables console logging errors, information etc about the library.
+There's also an attribute called **debug**, this enables or disables console logging errors, information etc about the library. `debug="[TRUE/FALSE]"`
+This is automatically set to false if no debug attribute where found.
 
 ### • Import individual parts
 
