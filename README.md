@@ -28,10 +28,13 @@ Here is a list over all functions and other addons as well as how to use them!
 ## Installation
 
 ### • Import full library from CDN
+*(All components)*
+
+Place the following `<script>` tag inside your `<header>` tag if your '*.html' file is in the same folder as 'JBrix.js'.
 
 Add:
 ```
-<script src="https://rawgit.com/YSCHGroup/JBrix/master/JBrix.js" path="https://rawgit.com/YSCHGroup/JBrix/master/"></script>
+<script src="https://rawgit.com/YSCHGroup/JBrix/master/JBrix.js" path="https://rawgit.com/YSCHGroup/JBrix/master/" debug="false"></script>
 ```
 To import **JBrix** to your website!
 
@@ -39,7 +42,7 @@ To import **JBrix** to your website!
 
 Add this tag for example: 
 ```
-<script src="https://rawgit.com/YSCHGroup/JBrix/master/functions/jb-clearURL.js"></script>
+<script src="https://rawgit.com/YSCHGroup/JBrix/master/functions/jb-clearURL.js" debug="true"></script>
 ```
 To import the function clearURL(); to your website!
 
@@ -47,7 +50,7 @@ Or:
 
 Add this:
 ```
-<script src="https://rawgit.com/YSCHGroup/JBrix/master/classes/jb-osf.js"></script>
+<script src="https://rawgit.com/YSCHGroup/JBrix/master/classes/jb-osf.js" debug="true"></script>
 ```
 To import and enable the use of the class="jb-osf"!
 
@@ -69,6 +72,7 @@ If you put `PATH` equals to `..`, JBrix will work if the html file is in the dir
 #### IMPORTANT!
 You are allowed to simply enter the directory path inside the `path="[PATH]"` attribute. It will only see it as a custom root directory for JBrix.
 This should also be the same place as 'JBrix.js' is located!
+There's also an attribute called debug, this enables or disables console logging errors, information etc about the library.
 
 ### • Import individual parts
 
@@ -92,7 +96,7 @@ Otherwise it will only display one confirmation message about JBrix i installed.
 
 ## Functions
 
-### • JB-Init()
+### • Init()
 *(Initialize JBrix)*
 
 This runns all the functions that is used to set up the JBrix library.
@@ -100,7 +104,7 @@ This runns all the functions that is used to set up the JBrix library.
 
 (Is runned at page load)
 
-### • JB-AddComponent(file)
+### • AddLibrary(file)
 *(Import external modules)*
 
 This is used to import new scripts to the html code! (puts the script inside the head tag)
@@ -137,13 +141,12 @@ Which makes the image clickable, and opens up a modal window above the page.
 It's extremely easy to use variables in JBrix. All you have to do is adding the variable "name" inside of "%%" and woalla! The variable will be replaced with it's representing value.<br>
 For example; You want your page to tell you the browsers width... Well, it's easy! add the %innerWidth% to the paragraph<br>
 <p>This is your width: %innerWidth%!</p>
-Becomes:
-
-This is your width: 1920!
+*Becomes:*
+<p>This is your width: 1920!</p>
 
 Using variables in JBrix is almost like PHP, the values are server sided. So the user can't see the %innerWidth% when inspecting the elements!
 
 ### • Check Available Variables
-*(Object.entries(window))*
+*Object.entries(window)*
 
 Use the command `Object.entries(window)` to list all available variables to use in your HTML code.
