@@ -1,11 +1,9 @@
 function init_oninstantchange() {
     let elms = document.querySelectorAll('[oninstantchange]');
     for (var i = 0; i < elms.length; i++) {
-        elms[i].addEventListener("keydown", function(elm) {
+        elms[i].addEventListener("keydown", function() {
             setTimeout(() => {
-                console.log(elm));
-                console.log(elm.getAttribute("oninstantchange"));
-                eval(elm.getAttribute("oninstantchange"));
+                eval(this.getAttribute("oninstantchange"));
             }, 1);
         });
     }
