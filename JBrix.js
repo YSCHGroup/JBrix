@@ -1,22 +1,34 @@
 /*
-
+   _________      _                 __   _____  __
+  |_  | ___ \    (_)               /  | |  _  |/  |
+    | | |_/ /_ __ ___  __  ______  `| | | |/' |`| |
+    | | ___ \ '__| \ \/ / |______|  | | |  /| | | |
+/\__/ / |_/ / |  | |>  <           _| |_\ |_/ /_| |_
+\____/\____/|_|  |_/_/\_\          \___(_)___(_)___/
+ Thanks for using the JBrix JavaScript Library!  <3
 */
+
+function addComponent(file) {
+	var NewScript=document.createElement('script');
+	NewScript.src=file+".js";
+   	NewScript.type='text/javascript';
+   	jbModuleList.appendChild(NewScript);
+}
 
 // Initialize Varialbes
 var jbFullLibrary = true;
 var jbDebugMode = false;
+
+// Variabls
+var root_directory = "";
 
 // Create new elements
 var jbModuleList = document.createElement("ul");
 jbModuleList.id="JBrixComponents";
 document.getElementsByTagName("head")[0].appendChild(jbModuleList);
 
-
 // Load JBrix when page has loaded
 window.onLoad = Init();
-
-// Variabls
-var root_directory = "";
 
 // Functions
 function Init() {
@@ -42,23 +54,19 @@ function Init() {
 	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: START'));
 
 	// Classes
-	AddLibrary(root_directory + "/classes/jb-oim");
-	AddLibrary(root_directory + "/classes/jb-osf");
-	AddLibrary(root_directory + "/classes/jb-moveableIn()");
+	addComponent(root_directory + "/classes/jb-oim");
+	addComponent(root_directory + "/classes/jb-osf");
+	addComponent(root_directory + "/classes/jb-moveableIn()");
 	// Functions
-	AddLibrary(root_directory + "/functions/jb-clearURL");
-	AddLibrary(root_directory + "/functions/jb-getUrlVariables");
-	AddLibrary(root_directory + "/functions/jb-replaceVariablesInElement");
-	AddLibrary(root_directory + "/functions/jb-arrayManagement");
+	addComponent(root_directory + "/functions/jb-fetchDocument");
+	addComponent(root_directory + "/functions/jb-clearURL");
+	addComponent(root_directory + "/functions/jb-getUrlVariables");
+	addComponent(root_directory + "/functions/jb-replaceVariablesInElement");
+	addComponent(root_directory + "/functions/jb-arrayManagement");
+	// Attributes
+	addComponent(root_directory + "/attributes/oninstantchange.js");
 
 	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: END'));
 
 	console.log("[%cJBrix%c] %cSuccessfully loaded all components of JBrix!", "color:coral; font-size: 140%", "color:black", "color:green");
-}
-
-function AddLibrary(file) {
-	var NewScript=document.createElement('script');
-	NewScript.src=file+".js";
-   	NewScript.type='text/javascript';
-   	jbModuleList.appendChild(NewScript);
 }

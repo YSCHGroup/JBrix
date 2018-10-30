@@ -4,7 +4,8 @@ function replaceVariablesInElement(element) {
 		try {
 			var key = Object.keys(window)[i];
 			var value = Object.values(window)[i];
-			if (String(typeof value) === "function" || String(typeof value) === "object" || value === null) {
+
+			if (String(typeof value) === "function" || String(typeof value) === "object" || value === null || value === undefined) {
 				continue;
 			}
 

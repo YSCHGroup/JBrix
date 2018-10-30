@@ -19,7 +19,7 @@ function getUrlVariables() {
 		}
 	}
 	catch(error) {
-		if (jbDebugMode) { console.log("[%cJBrix%c] getUrlVariables: %cNo variables in url found...", "color:coral; font-size: 140%", "color:black", "color: red;"); }
+		if (jbDebugMode) { console.log("[%cJBrix%c] getUrlVariables: %cNo variables in url...", "color:coral; font-size: 140%", "color:black", "color: red;"); }
 	}
 }
 getUrlVariables();

@@ -146,7 +146,7 @@ For example; You want your page to tell you the browsers width... Well, it's eas
 <em>Becomes:</em>
 <br>This is your width: 1920!</p>
 
-Using variables in JBrix is almost like PHP, the values are server sided. So the user can't see the %innerWidth% when inspecting the elements!
+Using variables in JBrix is almost like PHP, the values are server sided. So the user can't see the %innerWidth% when inspecting the elements **unless the variable is undefined**!
 
 ### • Check Available Variables
 *Object.entries(window)*
