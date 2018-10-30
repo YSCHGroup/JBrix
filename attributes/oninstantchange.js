@@ -3,7 +3,8 @@ function init_oninstantchange() {
     for (var i = 0; i < elms.length; i++) {
         elms[i].addEventListener("keydown", function(elm) {
             setTimeout(() => {
-                console.log(elm, elm.getAttribute("oninstantchange"));
+                console.log(elm));
+                console.log(elm.getAttribute("oninstantchange"));
                 eval(elm.getAttribute("oninstantchange"));
             }, 1);
         });
