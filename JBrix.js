@@ -64,7 +64,7 @@ function Init() {
 	addComponent(root_directory + "/functions/jb-replaceVariablesInElement");
 	addComponent(root_directory + "/functions/jb-arrayManagement");
 	// Attributes
-	addComponent(root_directory + "/attributes/oninstantchange.js");
+	addComponent(root_directory + "/attributes/oninstantchange");
 
 	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: END'));
 
