@@ -54,17 +54,17 @@ function Init() {
 	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: START'));
 
 	// Classes
-	addComponent(root_directory + "/classes/jb-oim");
-	addComponent(root_directory + "/classes/jb-osf");
-	addComponent(root_directory + "/classes/jb-moveableIn()");
+	addComponent(root_directory + "classes/jb-oim");
+	addComponent(root_directory + "classes/jb-osf");
+	addComponent(root_directory + "classes/jb-moveableIn()");
 	// Functions
-	addComponent(root_directory + "/functions/jb-fetchDocument");
-	addComponent(root_directory + "/functions/jb-clearURL");
-	addComponent(root_directory + "/functions/jb-getUrlVariables");
-	addComponent(root_directory + "/functions/jb-replaceVariablesInElement");
-	addComponent(root_directory + "/functions/jb-arrayManagement");
+	addComponent(root_directory + "functions/jb-fetchDocument");
+	addComponent(root_directory + "functions/jb-clearURL");
+	addComponent(root_directory + "functions/jb-getUrlVariables");
+	addComponent(root_directory + "functions/jb-replaceVariablesInElement");
+	addComponent(root_directory + "functions/jb-arrayManagement");
 	// Attributes
-	addComponent(root_directory + "/attributes/oninstantchange");
+	addComponent(root_directory + "attributes/oninstantchange");
 
 	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: END'));
 
