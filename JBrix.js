@@ -45,7 +45,7 @@ function Init() {
 	    		root_directory = path_val;
 	    	}
 	    	else {
-	    		console.log(i,"Current Directory as root directory for JBrix...")
+				console.log("[%cJBrix%c] Using current directory as root", "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;");}
 	    	}
 	    }
 	}
@@ -68,5 +68,5 @@ function Init() {
 
 	jbModuleList.appendChild(document.createComment(' JBrix Imported Modules: END'));
 
-	console.log("[%cJBrix%c] %cSuccessfully loaded all components of JBrix!", "color:coral; font-size: 140%", "color:black", "color:green");
+	console.log("[%cJBrix%c] %cSuccessfully loaded all components!", "color:coral; font-size: 140%", "color:black", "color:green");
 }
