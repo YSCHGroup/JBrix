@@ -1,3 +1,5 @@
+if (typeof jbDebugMode == undefined) { var jbDebugMode = false } /* If no Debug mode is entered */
+
 let jbScriptInitialized = false;
 jbScriptInit();
 
