@@ -38,6 +38,8 @@ function jbScriptInit() {
 }
 
 function jbExecuteCommand(command, outputElement) {
+
+
     // Include
     var reg_include = /include\(["']([^"']+)["']\)/g;
 	var mat_include = command.match(reg_include);
@@ -56,7 +58,10 @@ function jbExecuteCommand(command, outputElement) {
         .then(response => {
             console.log(response);
             outputElement.innerHTML += this.responseText; // Append response to output element as html
-        });
+        })
+        .catch(error => {
+            console.log("[%cJBrix%c] Failed to fetch source from: %c'" + file + "'%c: " + error, "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;", "color:black");
+        })
 
     	return true;
     }
@@ -71,6 +76,7 @@ function jbExecuteCommand(command, outputElement) {
 		outputElement.innerHTML += string;
 		return true;
 	}
+
 
 	// Unknown command
 	return false;
