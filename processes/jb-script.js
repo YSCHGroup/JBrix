@@ -43,46 +43,19 @@ function jbExecuteCommand(command, outputElement) {
         let file = mat_include[0].split('(')[1].split(')')[0].replace(/\'/g,"").replace(/\"/g,'');
         let currentDir = window.location.href.split('/').slice(0, -1).join('/');
 
-        if (jbUseJQuery) {
-            $.ajax({
-                type: "GET",
-                url: file,
-                crossDomain: true,
-                success: function (data) {
-                    // do something with server response data
-        				outputElement.innerHTML += data;
-                },
-                error: function (err) {
-                    // handle your error logic here
-        				console.log("Include Error:", err);
-                }
-            });
-        }
-        else {
-
-            // https://hacks.mozilla.org/2009/07/cross-site-xmlhttprequest-with-cors/
-            // https://stackoverflow.com/questions/3151436/how-can-i-get-the-current-directory-name-in-javascript
-            // https://blog.garstasio.com/you-dont-need-jquery/ajax/
-
-            // Send a xhr request
-            let xhr = new XMLHttpRequest();
-            xhr.open('GET', file);
-            xhr.setRequestHeader("Origin", currentDir);
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    alert('Response is: ' + xhr.responseText);
-                }
-                else {
-                    alert('Request failed. Response is: ' + xhr.status);
-                }
-            };
-            try {
-                xhr.send();
+        // Send a file request
+        fetch(file)
+        .then(response => {
+            if (!response.ok && jbDebugMode) {
+                console.log("[%cJBrix%c] " + response.status + ": Failed to fetch source from: %c'" + file + "'", "color:coral; font-size: 140%", "color:black", "color:blue; font-size: 110%; font-weight: bold;");
             }
-            catch(err) {
-                console.log(err.message);
-            }
-        }
+            return response.text(); // Convert response to text
+        })
+        .then(response => {
+            console.log(response);
+            outputElement.innerHTML += this.responseText; // Append response to output element as html
+        });
+
     	return true;
     }
 
